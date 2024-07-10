@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COmpatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIHE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="images/logo1.png" alt="GIHE LOGO 1" title="GEMS Institute of Higher Education">
+        <img src="images/logo2.png" alt="GIHE LOGO 2" title="G.I.H.E" style="float:right;">
+    </div>
+    <div class="navigation">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Clus and ECA</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="https://gihe.edu.np/alumni">Alumni</a></li>
+            <li><a href="https://gihe.edu.np/gallery">Gallery</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://gihe.edu.np/index.php">Online Results</a></li>
+        </ul>
+    </div>
+
+    <!--image-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="images/homeimage1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="images/homeimage3.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="images/homeimage1.jpg" style="width:100%">
+
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <div class="intro">
+        <h1>
+            Who We Are
+        </h1>
+        <p>
+            GEMS Institute of Higher Education, the higher section of GEMS School, was established in 2008 with the
+            prime objective of providing<br>
+            higher level education from Pre-university to Masters level degree courses. Currently, we offer GCE A Level,
+            a prestigious programme of the<br>
+            Cambridge University, UK and the Plus-2 in Science and Management affiliated to the Nepal Education Board
+            (NEB),Government of Nepal.<br>
+            <br>
+            The higher education facilities are located within the campus of the main complex of the high school at
+            Khumaltar, Dhapakhel, which is<br>
+            1.5 kilometer away from Satdobato, Lalitpur.
+        </p>
+    </div>
+    <h1 style="text-align: center;margin-top: 40px;color:rgb(14, 94, 94);">
+        Notice & Updates
+    </h1>
+    <hr width="90%">
+
+    <!--notice part-->
+    <div class="notice-container">
+
+        <div class="notice-style">
+            <img src="data:image/webp;base64,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"
+                alt="notice">
+            <h3>
+                Solo Music/Singing<br>
+                Competition 2021<br>
+            </h3>
+            <p>
+                GEMS | GIHE Student<br>
+                Council/Performing Arts<br>
+                Club organized GEMS<br>
+                Music/Singing<br>
+                Competition on 26...<br>
+                <br>
+                <a href="#">Read more <i class="fas fa-chevron-right"></i></a>
+            </p>
+        </div>
+        <div class="notice-style">
+
+            <img src="data:image/webp;base64,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"
+                alt="notice">
+            <h3>
+                Science Exhibition<br>
+                2021<br>
+            </h3>
+            <p>
+                The Fifth GEMS Intra-<br>
+                college Science Exhibition<br>
+                was held among the<br>
+                students of Plus 2 in the<br>
+                pr...<br>
+                <br>
+                <a href="#">Read more <i class="fas fa-chevron-right"></i></a>
+            </p>
+        </div>
+        <div class="notice-style">
+
+            <img src="data:image/webp;base64,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"
+                alt="notice">
+            <h3>
+                Business Plan <br>
+                Competition 2021<br>
+            </h3>
+            <p>
+                The business plan<br>
+                competition for the <br>
+                2021 was successfully<br>
+                completed on the 9th of<br>
+                Mar...<br>
+                <br>
+                <a href="#">Read more <i class="fas fa-chevron-right"></i></a>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="footer-about">
+            <footer>
+                <h3>
+                    About
+                </h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> Founder Chairman's Message</a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> Advisory Board Members</a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> Adminitrative Staff/Faculty Members</a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> College Disciplinary Members</a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> Corporate Social Responsibility</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <div class="footer-links">
+            <footer>
+                <h3>
+                    Links
+                </h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> CAIE A Level</a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> Plus 2 Programme</a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> Scholarship and Award</a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-caret-right"></i> Extra Curricular Activities (ECA)</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <div class="footer-photos">
+            <a href="https://www.dofe.org/" target="_block"><img
+                    src="data:image/webp;base64,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"
+                    alt="THE DUKE OF EDINBURGH'S AWARD"></a>
+            <br>
+            <a href="https://www.cambridgeassessment.org.uk/"><img style="width:150px; margin-top:10px;"
+                    src="https://gihe.edu.np/images/logo_cambridge.png.pagespeed.ce.ttPK0uq5B4.png"
+                    alt="Cambridge Assessment International School"></a>
+        </div>
+
+        <div class="footer-address">
+            <footer>
+                <h3>
+                    Contact Us
+                </h3>
+                <pre>
+                    <a href="https://www.google.com/maps/place/GEMS+Institute+of+Higher+Education/@27.6437133,85.3240426,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb177e9eb0d0b3:0x15f917b75b204403!8m2!3d27.6437086!4d85.3262313" target="_block"><i class="fas fa-2x fa-map-marker-alt"></i></a>
+                    
+                    GEMS Institute of Higher Education
+                    Dhapakhel, Lalitpur
+                    P.O. Box: 1794 Kathmandu
+                    Nepal
+
+
+                    <i class="fas fa-phone-alt"></i> 977 01 5275112
+
+                    <i class="fas fa-tty"></i> 977 01 5275121
+
+                    <a href="#"><i class="fas fa-envelope"></i> info@gihe.edu.np></a>
+                </pre>
+            </footer>
+        </div>
+    </div>
+    <div class="copyright-footer">
+
+        <div class="copyright">
+            <p>
+                Copyright <i class="far fa-copyright"></i> Gems College</a>
+            </p>
+        </div>
+
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQExQiZbCmJ9JgAAAXrNQXUoG1FB-QdTkDy88mUrwZeo4TL2T1IAOzz-qMUPr8ep2PqfsBlbMogJHi9sQoce1O1hbam1yko-LlVgyFxnbRMHEtN-nPtrbcqKZD6af_2vArxQ-eM=&originalReferer=https://gihe.edu.np/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F2484423%3Ftrk%3Dtyah%26trkInfo%3Dtas%253AGEMS%2520ins%252Cidx%253A1-2-2"
+                target="_self"><i class="fab fa-2x fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC_UHmlYy6lO-n41FNi-lfZg" target="_self"><i
+                    class="fab fa-2x fa-youtube"></i></a>
+            <a href="https://www.facebook.com/ssarthak.s" targer="_self"><i class="fab fa-2x fa-facebook-f"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+
+body{
+    background-color: #f5f5f5;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;   
+}
+.logo{
+    background-color: rgb(32, 30, 30);
+    padding:30px;
+   
+}
+.navigation ul{
+    background-color: rgb(59, 59, 59);
+    color:black;
+    margin:0px;
+    list-style-type: none;
+   
+}
+.navigation ul li{
+    display: inline-table;
+    text-decoration:none;
+    padding:20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size:22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation ul li a{
+    color:white;
+    text-decoration: none;
+    width:fit-content;
+    padding:0px;
+}
+.navigation ul li:hover{
+    text-decoration: underline;
+    background-color:#365d7e;
+}
+.navigation ul li.active{
+    background-color:#365d7e;
+    text-decoration: underline;
+    color:white;
+}
+.box-sizing border-box
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width:100%;
+  position: relative;
+  margin: auto;
+}
+/* The dots/bullets/indicators below image*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name:fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.intro{
+    background-color: rgb(255, 145, 0);
+    color:#000;
+    padding:20px;
+    margin-top:60px;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+}
+.intro h1{
+    text-align: left;
+    margin-left:10px;
+    margin-top:10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+}
+.intro p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px;
+
+}
+.notice-container{
+    width:85%;
+    margin-left:91px;
+    display:flex;
+    }
+.notice-container .notice-style{
+    margin-left:auto;
+    margin-right:auto;
+}
+.notice-container .notice-style img{
+    float:left;
+    margin-top:20px;
+    width:30%;
+}
+.notice-container .notice-style h3{
+    margin-left:95px;
+    font-size: 23px;
+    margin-top:38px;
+    color:rgb(83, 121, 122);
+}
+.notice-container .notice-style p{
+    margin-left:95px;
+    font-size:18px;
+    color:gray;
+}
+.notice-container .notice-style p a{
+    text-decoration:none;
+    font-size:22px;
+    color:rgb(128, 177, 207);
+}
+.footer{
+    background-color:rgb(61, 60, 60);
+    display:inline-flex;
+    padding:19.6px;
+    margin-top:30px;
+    width:97.4%
+}
+.footer-about footer ul{
+    list-style-type: none;
+}
+.footer-about footer h3{
+    color:white;
+    margin-left:108px;
+    font-size:24px;
+}
+.footer-about footer ul li a{
+    font-size:15px;
+}
+.footer-about footer ul li a i{
+    color:rgb(102, 101, 101);
+}
+.footer-about footer ul li a{
+    color:rgb(199, 192, 192);
+    text-decoration:none;
+    margin-left:69px;
+}
+.footer-about footer ul li a:hover{
+    text-decoration: underline;
+    color:#365d7e;
+}
+
+.footer-links footer ul{
+    list-style-type: none;
+}
+.footer-links footer h3{
+    color:white;
+    margin-left:108px;
+    font-size:24px;
+}
+.footer-links footer ul li a i{
+    color:rgb(102, 101, 101);
+}
+.footer-links footer ul li a{
+    color:rgb(199, 192, 192);
+    text-decoration:none;
+    margin-left:69px;
+    font-size:15px;
+    
+}
+.footer-links footer ul li a:hover{
+    text-decoration: underline;
+    color:#365d7e;
+}
+.footer-photos img{
+    margin-top:25px;
+    margin-left:80px;
+}
+.footer-address footer h3{
+    color:white;
+    margin-left:108px;
+    font-size:24px;
+}
+.footer-address footer pre{
+    color:rgb(199, 192, 192);
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left:20px;
+}
+.footer-address footer pre i{
+    color:rgb(102, 101, 101);
+}          
+.footer-address footer pre a{
+    color:rgb(199, 192, 192);
+}
+.footer-address footer pre{
+    font-size:15px;
+}
+.footer-address footer pre a:hover{
+    color:#365d7e;
+}
+.copyright-footer{
+    background-color: rgb(36, 33, 33);
+    margin-top:0px;
+    padding:0px;
+    display:inline-flex;
+    width:100.4%;
+}
+.copyright-footer .copyright{
+    color:rgb(199, 192, 192);
+    font-size:20px;
+}
+.copyright-footer .copyright p{
+    padding:10px;
+}
+.copyright-footer .copyright:hover{
+    color:rgb(199, 192, 192);
+    font-size:20px;
+    background-color: #365d7e;
+}
+.socialmedia {
+    display:block;
+    padding:20px;
+    margin-left:830px;
+}
+.socialmedia a{
+    margin-left:25px;
+    text-decoration: none;
+    color:rgb(199, 192, 192);
+}
